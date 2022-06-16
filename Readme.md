@@ -8,6 +8,7 @@
 
 
 ```python
+
 pip insall gunicorn   
 Flask==2.0.1 
 Jinja2==3.0.1 
@@ -15,6 +16,7 @@ psycopg2
 sklearn 
 pandas  
 numpy 
+
 ```
 
 ### step 3: add an heroku postgredb
