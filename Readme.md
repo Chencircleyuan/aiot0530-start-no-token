@@ -63,3 +63,7 @@ numpy
 1. open xampp
 2. get http://127.0.0.1:5000 
 6. run on website
+
+### Step6
+1. show the highcharts
+![Success](/Users/chenyuanyuan/Desktop/AIot_hw05/aiot0530-start-no-token/highcharts.png)
