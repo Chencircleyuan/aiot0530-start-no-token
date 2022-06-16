@@ -1,14 +1,40 @@
-# AIoT Github
+# AIot-HW05
 
-## Lecture 15: IoT Flask Web (deploy to heroku)
+## Lecture 14: IoT Flask Web (github, vs code)
 
-### step 1 : Clone this github
+### Step 1 : Development Environment Setup in AIot_HW05
 
-### step 2 : install some package
+1. Please install vs code, register github, install git for windows
 
+2. (check-point 1) github create a new repository (aiot0524)
 
-```python
+3. go to vs code clone this repository (choose new branch)
 
+4. vs code 安裝 python extension
+
+5. pip install flask, pandas, sklearn
+
+  快捷鍵 ctrl+shift+p ===> package manager 叫出 (git clone....)
+
+  快捷鍵 ctrl+' ==> 叫出終端機
+
+6. (check-point 2) 為了要upload local file to github from local要終端機 C:> 設定下面 (不設定 branch default ='main')
+
+  C:> git config --global user.name "Chencircleyuan"
+
+  C:> git config --global user.email a0909992729@gmail.com
+
+7. C:> git remote add origin https://github.com/Chencircleyuan/AIot-HW.git
+
+  if you want to change
+  git remote add origin https://github.com/Chencircleyuan/AIot-HW.git
+
+  git branch -M main
+
+  git push -u origin main
+
+### Step2 :Install some package
+'''
 pip insall gunicorn   
 Flask==2.0.1 
 Jinja2==3.0.1 
@@ -16,57 +42,24 @@ psycopg2
 sklearn 
 pandas  
 numpy 
+'''
 
-```
+### Step3
+1. open xampp
+2. DBMs--> add user/pwd = test123/test123
+3. create a database 'aiotdb'
+4. create a data table 'sensors.sql'
+5. INSERT  `sensors` (`id`, `time`, `value`, `temp`, `humi`, `status`) VALUES INTO sensors
+6. save as sensers.sql 
 
-### step 3: add an heroku postgredb
-
-* register heroku account
-* go to dashboard
-* new an app
-* go to resource and add-on an Heroku postgredb
-
-### step 4: login to heroku pstgredb using HeidiSQL
-
-
-```sql
-myserver ="<fill-in-Heroku-Postgredb-DB-sever>"
-myuser="<fill-in-Heroku-Postgredb-DB-user>"
-mypassword="<fill-in-Heroku-Postgredb-DB-pwd>"
-mydb="<fill-in-Heroku-Postgredb-DB-db>"
-
-```
-### step 5: import postgredb (in db/postgre.db)
+### Step4
+1. Open Sublime Text
+2. SELECT * FROM sensors
+3. 
 
 
-### step 6: setting db in app.py
-
-
-```sql
-myserver ="<fill-in-Heroku-Postgredb-DB-sever>"
-myuser="<fill-in-Heroku-Postgredb-DB-user>"
-mypassword="<fill-in-Heroku-Postgredb-DB-pwd>"
-mydb="<fill-in-Heroku-Postgredb-DB-db>"
-
-```
-### step 7: testing locally by running python app.py
-
-### step 8: deploy to github (new private github repositoy)
-
-delete .git and git remote add origin master github.com/xxxxx
-
-
-### step 9: Heroku deploy from github
-
-### step 10: Complete
-
-Sample link 1:
-https://awinlab-aiot.herokuapp.com/
-
-Sample link 2: 
-https://aiot0529.herokuapp.com/
-
-
-
-
+### Step5
+1. open xampp
+2. DBMs--> add user/pwd = test123/test123
+3. pip install flask pandas pymysql sklearn
 
