@@ -55,11 +55,11 @@ numpy
 ### Step4
 1. Open Sublime Text
 2. SELECT * FROM sensors
-3. 
+3. set sensors.sql in app.py
+4. test running app.py in vs code
 
 
 ### Step5
 1. open xampp
-2. DBMs--> add user/pwd = test123/test123
-3. pip install flask pandas pymysql sklearn
-
+2. get http://127.0.0.1:5000 
+6. run on website
