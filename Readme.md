@@ -66,4 +66,4 @@ numpy
 
 ### Step6
 1. show the highcharts
-![Success](/Users/chenyuanyuan/Desktop/AIot_hw05/aiot0530-start-no-token/highcharts.png)
+![Success](https://github.com/Chencircleyuan/aiot0530-start-no-token/blob/v6/highcharts.jpg)
